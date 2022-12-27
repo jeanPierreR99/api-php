@@ -6,7 +6,7 @@ require __DIR__ . "/inc/bootstrap.php";
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri = explode( '/', $uri );
 //method-get
-//url = localhost//API-PHP/index.php/$getParams
+//url = localhost//API-PHP/index.php/getParams?email=@gmail.com&pass=xxxx
 if ((isset($uri[3]) && $uri[3] == 'getParams')) {
     require PROJECT_ROOT_PATH . "/Controller/Api/UserController.php";
 
